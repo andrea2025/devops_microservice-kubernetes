@@ -1,0 +1,11 @@
+<paste log output from Kubernetes-mediated prediction, here>
+pod/udademoproject1 created
+NAME              READY   STATUS              RESTARTS   AGE
+udademoproject1   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+
+Error from server (AlreadyExists): pods "udademoproject1" already exists
+NAME              READY   STATUS    RESTARTS   AGE
+udademoproject1   1/1     Running   0          97s
+Unable to listen on port 8000: Listeners failed to create with the following errors: [unable to create listener: Error listen tcp4 127.0.0.1:8000: bind: address already in use unable to create listener: Error listen tcp6 [::1]:8000: bind: address already in use]
+error: unable to listen on any of the requested ports: [{8000 80}]
